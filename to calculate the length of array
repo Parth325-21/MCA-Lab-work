@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    char name[] = {'K','I','E','T'};
+    char nam2[] = {"KIET"};
+    int y,S;
+    y = strlen(name);
+    S = strlen(nam2);
+    printf("the size is given %d ",y);
+    printf("the size is given %d",S);
+    
+}

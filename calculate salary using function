@@ -1,0 +1,22 @@
+#include <stdio.h>
+int calculate(int);
+int main() {
+    int num1,s;
+    printf("enter the a salary");
+    scanf("%d",&s);
+    calculate(s);
+}
+int calculate(int s1)
+{
+    if(s1>10000)
+    {
+       s1= (s1- 2000);
+      printf("salary is decreased  %d",s1);
+    }
+    else 
+    {
+        s1 = (s1 + 4000);
+        printf("salary is increased %d",s1);
+    }
+    return 0;
+}

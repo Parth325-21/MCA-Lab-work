@@ -1,0 +1,15 @@
+#include <stdio.h>
+int sub(int,int);
+int main() {
+    int num1,num2;
+    printf("enter the two numbers");
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    int sum = sub(num1,num2);
+    printf("%d",sum);
+    return 0;
+}
+int sub(int n1,int n2)
+{
+    return(n1-n2);
+}

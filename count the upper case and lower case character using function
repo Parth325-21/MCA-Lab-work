@@ -1,0 +1,27 @@
+#include <stdio.h>
+int calculate(int,,char);
+void main()
+{
+    int choice1,int lcount=0,ucount=0;char X;
+    printf("enter the choice");
+    scanf("%d",&choice1);
+    calculate(choice1,X);
+}
+int calculate(int choice,char X1)
+{
+    while(choice!=0)
+    {
+        printf("enter the character");
+        scanf("%c",&X1);
+        if(X>='A' && X<='Z')
+        {
+            printf("It is the upper case character");
+            lcount++;
+        }
+        else if(X>='a' && X<='z')
+        {
+            printf("It is the lower case character");
+            ucount++;
+        }
+    }
+}

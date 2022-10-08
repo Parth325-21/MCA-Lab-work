@@ -1,0 +1,36 @@
+#include <stdio.h>
+int calculate(float,char);
+void main()
+{
+    float p1;char grade1;
+    printf("enter the value of percentage");
+    scanf("%f",&p1);
+ calculate( p1,grade1);
+}
+int calculate(float p,char grade)
+{
+    if(p>90)
+    {
+        grade = 'A';
+        printf("the grade is given by %c",grade);
+    }
+    else if(p>70 && p<=90)
+    {
+        grade ='B';
+        printf("grade is given by %c",grade);
+    }
+    else if(p>50 && p<=70)
+    {
+        grade = 'C';
+        printf("grade is given by %c",grade);
+    }
+    else if(p<=50)
+    {
+        grade = 'D';
+        printf("grade is given by %c",grade);
+    }
+    else
+    {
+        printf("just pass in exam");
+    }
+}

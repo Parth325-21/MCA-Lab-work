@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdio.h>
+int applyoperator(int,int,char);
+void main()
+{
+    int n1,n2;char oper1;float l;
+    printf("enter the value of n1,n2 and operator");
+    scanf("%d %d %c",&n1,&n2,&oper1);
+    applyoperator(n1,n2,oper1);
+}
+int applyoperator(int A,int B,char oper)
+{
+    float l1;
+if(oper =='*')
+{
+    l1 = A*B;
+    printf("multiplication is given by %f",l1);
+}
+else if(oper == '-')
+{
+    l1 = A-B;
+    printf("Subtraction is given by %f",l1);
+}
+else if(oper == '+')
+{
+    l1 = A+B;
+    printf("Addiction is given by %f",l1);
+}
+else if(oper == '/')
+{
+    l1 = A/B;
+    printf("division is given by %f",l1);
+}
+else 
+{
+    printf("operator is invalid");
+}
+}

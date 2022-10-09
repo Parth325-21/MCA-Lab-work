@@ -1,0 +1,36 @@
+#include <stdio.h>
+int employe(int,int);
+void main()
+{
+    int n1,A1,countg=0,countf=0,counts=0,countd=0;
+    printf("enter the number of employes");
+    scanf("%d",&n1);
+    employe(n1,A1);
+}
+int employe(int n,int A)
+{
+    int i,countg1=0,countg2=0,countg3=0,countg4=0;
+    for(i=1;i<=n;i++)
+    {
+        printf("enter the age of employes");
+        scanf("%d",&A);
+        
+        if(A>20 && A<=25)
+        {
+            countg1++;
+        }
+        else if(A>25 && A<=30)
+        {
+            countg2++;
+        }
+        else if(A>30 && A<=35)
+        {
+            countg3++;
+        }
+        else if(A>35)
+        {
+            countg4++;
+        }
+    }
+    printf("the age of employe %d %d %d %d",countg1,countg2,countg3,countg4);
+}

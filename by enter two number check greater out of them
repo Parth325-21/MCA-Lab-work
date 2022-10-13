@@ -1,0 +1,13 @@
+#include <stdio.h>
+void great(int,int);
+void main()
+{
+    int a,b;
+    printf("enter the value of a and b");
+    scanf("%d %d",&a,&b);
+    great(a,b);
+}
+void great(int a1,int b1)
+{
+    a1>b1?printf("a is greater %d",a1):printf("b is greater %d",b1);
+}

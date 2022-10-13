@@ -1,0 +1,11 @@
+#include <stdio.h>
+void great(int,int);
+void main()
+{
+    int a=20,b=10;
+    great(a,b);
+}
+void great(int a1,int b1)
+{
+    a1>b1?printf("a is greater %d",a1):printf("b is greater %d",b1);
+}

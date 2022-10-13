@@ -1,0 +1,14 @@
+#include <stdio.h>
+int fun(int);
+void main()
+{
+    int i=10;
+    for(fun(++i);fun(i)<20;fun(i++))
+    {
+        printf("%d",i);
+    }
+}
+int fun(int j)
+{
+    return j;
+}

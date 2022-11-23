@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main()
+{
+    float sum=0,n,term;
+    int count =1;
+    printf("enter the value of n\n");
+    scanf("%f",&n);
+    term = 1.0/n;
+    while(count<=n)
+    {
+        sum = sum+term;
+        count++;
+    }
+    printf("sum = %f\n",sum);
+}

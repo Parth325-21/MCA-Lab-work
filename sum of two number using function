@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void main() {
+    int X;
+    float Y,Z;
+    float sum(int,float);
+    printf("enter the value of X");
+    scanf("%d",&X);
+    printf("enter the value of Y");
+    scanf("%f",&Y);
+    Z= sum(X,Y);
+    printf("%f",Z);
+}
+float sum(int a,float b)
+{
+    float C;
+    C=a+b;
+    return C;
+}

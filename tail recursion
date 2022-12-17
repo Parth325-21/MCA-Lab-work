@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+    int a=10;
+    void display(int);
+    display(10);
+}
+void display(int a)
+{
+    if(a==1)
+    {
+        printf("\n%d",a);
+    }
+    else
+    {
+        printf("\n%d",a);
+        display(a-1);
+    }
+}
